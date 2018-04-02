@@ -1,0 +1,50 @@
+把MSVC2015和 WindowsKits 符号链接过来
+cd /d c:\CodeBlocks
+mklink /d MSVC2015 "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC"
+mklink /d WindowsKits "C:\Program Files (x86)\Windows Kits"
+
+编译器安装目录设定
+$(CODEBLOCKS)\MSVC2015
+rc.exe 改成  $(CODEBLOCKS)\WindowsKits\8.1\bin\x86\rc.exe
+
+搜索路径  编译器
+$(CODEBLOCKS)\MSVC2015\include
+$(CODEBLOCKS)\WindowsKits\10\Include\10.0.10150.0\ucrt
+$(CODEBLOCKS)\WindowsKits\8.1\Include\um
+$(CODEBLOCKS)\WindowsKits\8.1\Include\shared
+
+
+搜索路径  连接器
+$(CODEBLOCKS)\MSVC2015\lib
+$(CODEBLOCKS)\MSVC2015\lib\x86
+$(CODEBLOCKS)\WindowsKits\8.1\Lib\winv6.3\um\x86
+$(CODEBLOCKS)\WindowsKits\10\Lib\10.0.10150.0\ucrt\x86
+
+
+搜索路径  资源编译器
+$(CODEBLOCKS)\MSVC2015\include
+$(CODEBLOCKS)\WindowsKits\10\Include\10.0.10150.0\ucrt
+$(CODEBLOCKS)\WindowsKits\8.1\Include\um
+$(CODEBLOCKS)\WindowsKits\8.1\Include\shared
+
+
+向导建立 WIN32 GUI 选择Platform SDK目录 填路径
+$(CODEBLOCKS)\WindowsKits\8.1\bin\x86
+
+
+
+
+
+百度网盘分享
+http://pan.baidu.com/s/1o6N2Ik6
+====================================
+MSVC2015.7z             VC2015主编译器
+WindowsKits.7z          Windows 软件开发工具包 (SDK)
+SysWOW64_VC2015.7z      可能用到C++ 运行时
+
+VS2015_for_CB.conf      VS2015在CB中的配置文件
+CodeBlocks设置MSVC2015编译器.txt      目前设置可以编译控制台程序和WIN32 GUI for x86
+
+
+
+

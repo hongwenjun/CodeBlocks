@@ -1,0 +1,43 @@
+===============================================================================
+
+wxWidgets-3.1.0 发行库编译方法 使用 TDM-GCC 5.1.0  X64
+
+进入gcc目录 把那个mingw32-make 复制一份改名成 make.exe
+
+makefile.gcc 添加一行
+SHELL=cmd.exe
+
+COMPILER_VERSION = ERROR-COMPILER-VERSION-MUST-BE-SET-FOR-OFFICIAL-BUILD
+改成合适的版本号
+COMPILER_VERSION = 510TDM_x64
+
+// 加载gcc环境变量 进入 wx库编译目录
+c:\MinGW64\mingwvars.bat
+cd D:\wxWidgets-3.1.0\build\msw
+
+// 运行以下命令行编译，第一次会少文件，第二次就会开始编译了
+make -j3 -f makefile.gcc CPPFLAGS="-Os -fno-keep-inline-dllexport" LDFLAGS=-s SHARED=1 BUILD=release UNICODE=1 DEBUG_INFO=0 DEBUG_FLAG=0 MONOLITHIC=1 OFFICIAL_BUILD=1 RUNTIME_LIBS=static
+
+
+===============================================================================
+
+
+wxWidgets-2.8.12  发行库 编译器参数如下使用 VC2010编译器编译
+
+VC2010 编译参数
+nmake -f makefile.vc CPPFLAGS=/Os LDFLAGS="/MANIFEST:NO /OPT:REF /OPT:ICF" BUILD=release SHARED=1 UNICODE=1 DEBUG_INFO=0 DEBUG_FLAG=0 MONOLITHIC=1 OFFICIAL_BUILD=1 RUNTIME_LIBS=static >nul
+
+
+TDM-GCC 4.7.1 编译参数
+mingw32-make -j3 -f makefile.gcc CPPFLAGS="-Os -fno-keep-inline-dllexport" LDFLAGS=-s SHARED=1 BUILD=release UNICODE=1 DEBUG_INFO=0 DEBUG_FLAG=0 MONOLITHIC=1 OFFICIAL_BUILD=1 RUNTIME_LIBS=static > wxlog.txt
+
+
+
+VC2010编译器可以用这个测试
+http://msvc.googlecode.com/files/MSVC_2010_SP1_x86.7z
+
+
+
+
+
+
