@@ -1,13 +1,27 @@
+
 # CodeBlocks  配置目录说明
+
 https://github.com/hongwenjun/CodeBlocks
+
+蘭雅sRGB 龙芯小本服务器 | [sRGB.vicp.net](http://sRGB.vicp.net)
+
 ---
-        从百度网盘只下载 .git 仓库包 可以省资源  
-URL:    http://pan.baidu.com/s/1nuR9e57
-   
-        下载 CodeBlocks_Git.zip 解压开
-        git 进入 CodeBlocks   恢复文件使用命令
-        git pull
-        git checkout .
+```
+# 使用git下载  CodeBlocks 配置目录说明和个性配置文件
+git clone https://github.com/hongwenjun/CodeBlocks.git  CodeBlocks
+
+# 覆盖替换 CodeBlocks 相关目录
+
+```
+
+
+主程序请到官方下载，[www.codeblocks.org](www.codeblocks.org)
+	
+编译器文件太大， 可以按需要到百度网盘下载，链接地址
+[http://pan.baidu.com/s/1dD6Qrap](http://pan.baidu.com/s/1dD6Qrap)
+
+[CodeBlocks 使用视频 ](http://srgb.vicp.net/codeblocks/)
+
 ---
 
     CHM        cplusplus-2013-8-8.chm等多本参考手册
