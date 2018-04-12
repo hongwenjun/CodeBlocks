@@ -2,10 +2,11 @@ share/
 tool/
 AppData/
 CHM/
-MinGW/
-MinGW64/
-MSVC/
-MSVC2015/
+
+MinGW
+MinGW64
+MSVC
+MSVC2015
 
 *.dll
 *.exe
