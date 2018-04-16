@@ -14,8 +14,11 @@ git clone https://github.com/hongwenjun/CodeBlocks.git  CodeBlocks
 
 ```
 
+##   CodeBlocks颜色主题，修改了激活行和选择区块
+![](https://github.com/hongwenjun/CodeBlocks/raw/master/%E8%AF%B4%E6%98%8E/cb_theme.png)
 
-主程序请到官方下载，[www.codeblocks.org](www.codeblocks.org)
+
+主程序请到官方下载，[www.codeblocks.org](http://www.codeblocks.org)
 	
 编译器文件太大， 可以按需要到百度网盘下载，链接地址
 [http://pan.baidu.com/s/1dD6Qrap](http://pan.baidu.com/s/1dD6Qrap)
