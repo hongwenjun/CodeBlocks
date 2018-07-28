@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocksConfig version="1">
+<debugger_common>
+<sets>
+<gdb_debugger>
+<conf1>
+<NAME>
+    <str>
+        <![CDATA[Default]]>
+    </str>
+</NAME>
+<values>
+    <EXECUTABLE_PATH>
+        <str>
+            <![CDATA[$(CODEBLOCKS)\MinGW\bin\gdb32.exe]]>
+        </str>
+    </EXECUTABLE_PATH>
+    <DISABLE_INIT bool="1" />
+    <USER_ARGUMENTS>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </USER_ARGUMENTS>
+    <TYPE int="0" />
+    <INIT_COMMANDS>
+        <str>
+            <![CDATA[source $(TARGET_COMPILER_DIR)gdb32\bin\gdbinit
+]]>
+        </str>
+    </INIT_COMMANDS>
+    <WATCH_ARGS bool="1" />
+    <WATCH_LOCALS bool="1" />
+    <CATCH_EXCEPTIONS bool="1" />
+    <EVAL_TOOLTIP bool="1" />
+    <ADD_OTHER_SEARCH_DIRS bool="0" />
+    <DO_NOT_RUN bool="0" />
+    <DISASSEMBLY_FLAVOR int="1" />
+    <INSTRUCTION_SET>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </INSTRUCTION_SET>
+</values>
+</conf1>
+<conf2>
+<NAME>
+    <str>
+        <![CDATA[cdb]]>
+    </str>
+</NAME>
+<values>
+    <EXECUTABLE_PATH>
+        <str>
+            <![CDATA[C:\CodeBlocks\tool\windbg\cdb.exe]]>
+        </str>
+    </EXECUTABLE_PATH>
+    <DISABLE_INIT bool="1" />
+    <USER_ARGUMENTS>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </USER_ARGUMENTS>
+    <TYPE int="1" />
+    <INIT_COMMANDS>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </INIT_COMMANDS>
+    <WATCH_ARGS bool="1" />
+    <WATCH_LOCALS bool="1" />
+    <CATCH_EXCEPTIONS bool="1" />
+    <EVAL_TOOLTIP bool="1" />
+    <ADD_OTHER_SEARCH_DIRS bool="0" />
+    <DO_NOT_RUN bool="0" />
+    <DISASSEMBLY_FLAVOR int="0" />
+    <INSTRUCTION_SET>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </INSTRUCTION_SET>
+</values>
+</conf2>
+<conf3>
+<NAME>
+    <str>
+        <![CDATA[MinGW64_GDB]]>
+    </str>
+</NAME>
+<values>
+    <EXECUTABLE_PATH>
+        <str>
+            <![CDATA[$(CODEBLOCKS)\MinGW64\bin\gdb64.exe]]>
+        </str>
+    </EXECUTABLE_PATH>
+    <DISABLE_INIT bool="1" />
+    <USER_ARGUMENTS>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </USER_ARGUMENTS>
+    <TYPE int="0" />
+    <INIT_COMMANDS>
+        <str>
+            <![CDATA[source $(TARGET_COMPILER_DIR)gdb64\bin\gdbinit
+]]>
+        </str>
+    </INIT_COMMANDS>
+    <WATCH_ARGS bool="1" />
+    <WATCH_LOCALS bool="1" />
+    <CATCH_EXCEPTIONS bool="1" />
+    <EVAL_TOOLTIP bool="0" />
+    <ADD_OTHER_SEARCH_DIRS bool="0" />
+    <DO_NOT_RUN bool="0" />
+    <DISASSEMBLY_FLAVOR int="0" />
+    <INSTRUCTION_SET>
+        <str>
+            <![CDATA[]]>
+        </str>
+    </INSTRUCTION_SET>
+</values>
+</conf3>
+</gdb_debugger>
+</sets>
+</debugger_common>
+</CodeBlocksConfig>
